@@ -4,7 +4,7 @@ import UserPage from "./pages/User";
 import UserProfile from "./components/UserProfile";
 import RootLayout from "./pages/Root";
 import ThreeDPage from "./pages/3D";
-
+import NotFound from "./components/NotFound";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "policies",
         element: <div>General Policies</div>,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
