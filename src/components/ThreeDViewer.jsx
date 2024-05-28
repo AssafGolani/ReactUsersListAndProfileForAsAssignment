@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import * as THREE from "three";
 
-const App = () => {
+export default function ThreeDViewer() {
   const [shape, setShape] = useState("rectangle");
   const mountRef = useRef(null);
 
@@ -94,6 +94,4 @@ const App = () => {
       <div ref={mountRef} style={{ width: "100%", height: "500px" }} />
     </div>
   );
-};
-
-export default App;
+}
