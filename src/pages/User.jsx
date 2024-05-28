@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Outlet, useParams } from "react-router-dom";
-import UserCardView from "../components/UserCardView";
-import UserListView from "../components/UserListView";
-
+import UserView from "../components/UserView";
 export default function UserPage() {
   const [view, setView] = useState("list"); // State to manage view selection
   const { userId } = useParams(); // Get userId from URL parameters
@@ -15,15 +13,7 @@ export default function UserPage() {
           <button onClick={() => setView("card")}>Card View</button>
         </div>
       )}
-      {!userId ? (
-        view === "list" ? (
-          <UserListView />
-        ) : (
-          <UserCardView />
-        )
-      ) : (
-        <Outlet />
-      )}
+      {!userId ? <UserView viewType={view} /> : <Outlet />}
     </div>
   );
 }
