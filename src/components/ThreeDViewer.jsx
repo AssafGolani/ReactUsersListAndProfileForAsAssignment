@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 import React, { useState, useEffect, useRef } from "react";
 import * as THREE from "three";
 
