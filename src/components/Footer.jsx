@@ -6,7 +6,7 @@ export default function Footer() {
       <ul className={classes.footerList}>
         <li className={classes.footerItem}>
           <Link to="/" className={classes.footerLink}>
-            User's List
+            Users List
           </Link>
         </li>
         <li className={classes.footerItem}>
