@@ -1,0 +1,42 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardPhoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardName {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.cardName:hover {
+  text-decoration: underline;
+}
+
+.cardNickname {
+  font-size: 0.9em;
+  color: #777;
+}
